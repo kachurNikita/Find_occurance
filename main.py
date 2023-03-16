@@ -1,8 +1,9 @@
 
-
 def find_occurance(neddle, haystack):
     for i in range(len(haystack)):
-        if haystack[i:len(neddle)] == neddle:
+        print(haystack[i: len(neddle)])
+        print(haystack[i:i+ len(neddle)])
+        if haystack[i:i+len(neddle)] == neddle:
             return i
     return -1
 
